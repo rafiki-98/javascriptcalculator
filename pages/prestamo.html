@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financiera Ortiz-Hernandez | Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css"></head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Financiera Ortiz-Hernandez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse show" id="navbarDark">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./images/loan_image.jpg" alt="Préstamos al Instante" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h1>Préstamos al Instante</h1>
+                <p>En la Financiera Ortiz Hernandez pensamos en nuestros clientes, por eso queremos que puedan cumplir con sus metas personales a corto o mediano plazo. Por eso brindamos soluciones de préstamos con baja tasa de interés y con menores requisitos que cualquier banco.</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="mt-5">
+        <h2 class="text-center">Acceda hoy mismo a su crédito</h2>
+        <form id="creditForm">
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="fullName">
+            </div>
+            <div class="mb-3">
+                <label for="cedula" class="form-label">Número de Cédula</label>
+                <input type="text" class="form-control" id="cedula">
+            </div>
+            <div class="mb-3">
+                <label for="birthDate" class="form-label">Fecha de Cumpleaños</label>
+                <input type="date" class="form-control" id="birthDate">
+            </div>
+            <div class="mb-3">
+                <label for="workType" class="form-label">Tipo de Trabajo</label>
+                <select class="form-select" id="workType">
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="asalariado">Asalariado</option>
+                    <option value="independiente">Independiente</option>
+                    <option value="informal">Informal</option>
+                    <option value="desempleado">Desempleado</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="incomeRange" class="form-label">Ingresos Mensuales</label>
+                <select class="form-select" id="incomeRange">
+                    <option value="" disabled selected>Seleccione sus ingresos mensuales</option>
+                    <option value="menos300">Menos de ₡300,000</option>
+                    <option value="300-400">₡300,000 - ₡400,000</option>
+                    <option value="500-600">₡500,000 - ₡600,000</option>
+                    <option value="600-700">₡600,000 - ₡700,000</option>
+                    <option value="700-1000">₡700,000 - ₡1,000,000</option>
+                    <option value="mas1000">Más de ₡1,000,000</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="loanAmount" class="form-label">Monto del Préstamo (₡)</label>
+                <select class="form-select" id="loanAmount">
+                    <option value="50000">50,000 colones</option>
+                    <option value="100000">100,000 colones</option>
+                    <option value="200000">200,000 colones</option>
+                    <option value="300000">300,000 colones</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Cuotas</label>
+                <select class="form-select" id="loanTerms">
+                    <option value="3">3 Cuotas</option>
+                    <option value="6">6 Cuotas</option>
+                    <option value="12">12 Cuotas</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Continuar</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>
